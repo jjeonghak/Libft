@@ -61,7 +61,7 @@ s : ranlib(1)과 마찬가지로 아카이브 인덱스 생성, 링크속도 최
 
 ## Function Instructions
 
-- ##### _1.  ft_atoi : 문자열을 인트형으로 변환_
+##### 1.  ft_atoi : 문자열을 인트형으로 변환
 		43 : sign 문자열의 부호를 나타내는 변수
 		44 : check 반복문을 끝내기 위한 플래그, 오버*언더플로 발생시
 		45 : result 결과를 담을 변수, long long max, min을 확인하기 위해 long long 선언
