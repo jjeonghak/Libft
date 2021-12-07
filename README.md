@@ -99,7 +99,7 @@ s : ranlib(1)과 마찬가지로 아카이브 인덱스 생성, 링크속도 최
 	/* s == NULL, n == 0 -> warning */  
 
 
-**3. ft_calloc : 멜록을 이용해 심볼릭 포인터에 메모리를 할당 후 주소인덱스값을 0으로 설정, 호출한 후 메모리 해제(free) 필수**
+##### 3. ft_calloc : 멜록을 이용해 심볼릭 포인터에 메모리를 할당 후 주소인덱스값을 0으로 설정, 호출한 후 메모리 해제(free) 필수
 		17-19 : ptr 데이터의 갯수 * 타입크기만큼 동적 메모리 할당
 		22 : ft_bzero 호출
 
@@ -109,11 +109,11 @@ s : ranlib(1)과 마찬가지로 아카이브 인덱스 생성, 링크속도 최
 	or a unique pointer value that can later be successfully passed to free */
 
 
-**4. ft_isalnum : 인트형 값이 알파벳과 정수에 해당하는지 판단**
-**5. ft_isalpha : 인트형 값이 알파벳에 해당하는지 판단**
-**6. ft_isascii : 인트형 값이 아스키코드에 해당하는지 판단**
-**7. ft_isdigit : 인트형 값이 정수에 해당하는지 판단**
-**8. ft_isprint : 인트형 값이 출력가능한지 판단**
+##### 4. ft_isalnum : 인트형 값이 알파벳과 정수에 해당하는지 판단
+##### 5. ft_isalpha : 인트형 값이 알파벳에 해당하는지 판단
+##### 6. ft_isascii : 인트형 값이 아스키코드에 해당하는지 판단
+##### 7. ft_isdigit : 인트형 값이 정수에 해당하는지 판단
+##### 8. ft_isprint : 인트형 값이 출력가능한지 판단
 
 	/* ISO/IEC 9899:TC2 7.4/1 */
 	/* their domain is restricted to the small positive integers 
@@ -122,7 +122,7 @@ s : ranlib(1)과 마찬가지로 아카이브 인덱스 생성, 링크속도 최
 	and hence distinguishable from any valid character code */
 
 
-**9. ft_itoa : 인트형 값을 문자열로 변환**
+##### 9. ft_itoa : 인트형 값을 문자열로 변환
 		33 : nlen 인트형값의 길이
 		34 : ptr 변환후 값을 저장하기 위한 문자형 포인터
 		36 : ft_intlen 호출후 nlen에 값 저장
@@ -137,15 +137,15 @@ s : ranlib(1)과 마찬가지로 아카이브 인덱스 생성, 링크속도 최
 		23-27 : 10으로 나눠가며 cnt 값 증가
 
 
-**10. ft_lstadd_back : 리스트의 맨 마지막 노드 뒤에 새로운 노드 추가**
-**11. ft_lstadd_front : 리스트의 맨 처음 노드 앞에 새로운 노드 추가**
-**12. ft_lstclear : 리스트의 처음 노드부터 del 함수를 적용시키면서 삭제**
-**13. ft_lstdelone : 리스트의 한개 노드 del 함수 적용후 삭제**
-**14. ft_lstiter : 리스트에 한개의 노드씩 f 함수 적용**
-**15. ft_lstlast : 라스트의 마지막 노드 반환**
-**16. ft_lstmap : 어떠한 리스트에 f 함수를 적용한 새로운 리스트 생성**
-**17. ft_lstnew : 한개의 새로운 노드 생성**
-**18. ft_lstsize : 리스트의 크기 반환**
+##### 10. ft_lstadd_back : 리스트의 맨 마지막 노드 뒤에 새로운 노드 추가
+##### 11. ft_lstadd_front : 리스트의 맨 처음 노드 앞에 새로운 노드 추가
+##### 12. ft_lstclear : 리스트의 처음 노드부터 del 함수를 적용시키면서 삭제
+##### 13. ft_lstdelone : 리스트의 한개 노드 del 함수 적용후 삭제
+##### 14. ft_lstiter : 리스트에 한개의 노드씩 f 함수 적용
+##### 15. ft_lstlast : 라스트의 마지막 노드 반환
+##### 16. ft_lstmap : 어떠한 리스트에 f 함수를 적용한 새로운 리스트 생성
+##### 17. ft_lstnew : 한개의 새로운 노드 생성
+##### 18. ft_lstsize : 리스트의 크기 반환
 
 **19. ft_memchr : 주소의 인덱스값 중에 원하는 인덱스 값이 존재하는지 선택한 구간 내에서 탐색 후 주소 반환**
 		17 : ptr 주소값 연산을 위한 포인터
