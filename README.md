@@ -10,6 +10,28 @@ _요약: 이 프로젝트의 목적은 흔히 쓰이는 함수들을 재구성�
 
 <br>
 
+## Caution
+
+- #### _Makefile
+  
+  기존 과제에서는 모든 소스파일과 목적파일이 최상위 디렉토리에 있어야 통과가능
+  
+  **_하지만 올려놓은 Makefile은 소스디렉토리(srcs)와 목적디렉토리(objs)가 존재 혹은 생성되므로 주의가 필요함_**
+  
+- #### _restrict 사용금지(C99 이후 버전에서 사용가능, 메모리 접근 최적화 한정자)_
+
+  컴파일러 최적화를 통해 빠른 성능을 낼 수 있으나 동일한 메모리 공간에 대한 접근이 없다는 것이 보장되어야만 예상하지 못한 결과 방지가능
+
+- #### _ar 정적 라이브러리_
+
+  r : 새로운 오브젝트 파일이면 추가, 기존 파일이면 치환
+
+  c : 아카이브 생성, 존재하지 않는 아카이브 작성하는 경우 경고 메세지 출력하지 않음
+  
+  s : ranlib(1)과 마찬가지로 아카이브 인덱스 생성, 링크속도 최적화 및 에러 방지 
+
+<br>
+
 ## Common Instructions
 
 - ##### _Your project must be written in accordance with the Norm. If you have bonus files/functions, they are included in the norm check and you will receive a 0 if there is a norm error inside._
@@ -46,16 +68,6 @@ _요약: 이 프로젝트의 목적은 흔히 쓰이는 함수들을 재구성�
 
 - ##### _Submit your work to your assigned git repository. Only the work in the git repository will be graded. If Deepthought is assigned to grade your work, it will be done after your peer-evaluations. If an error happens in any section of your work during Deepthought’s grading, the evaluation will stop._
   할당된 git 저장소에 과제물을 제출하세요. 오직 git 저장소에 있는 과제물만 등급이 매겨질 것입니다. Deepthought가 평가하는 과제의 경우엔, 동료평가 이후에 Deepthought가 수행됩니다. 만약 Deepthought 평가 중에 오류가 발생한다면, 그 즉시 평가는 중지될 것입니다.
-
-<br>
-
-restrict 사용금지(C99 이후 버전에서 사용가능, 메모리 접근 최적화 한정자)
-컴파일러 최적화를 통해 빠른 성능을 낼 수 있으나 동일한 메모리 공간에 대한 접근이 없다는 것이 보장되어야만 예상하지 못한 결과 방지가능
-
-ar 정적 라이브러리 
-r : 새로운 오브젝트 파일이면 추가, 기존 파일이면 치환
-c : 아카이브 생성, 존재하지 않는 아카이브 작성하는 경우 경고 메세지 출력하지 않음
-s : ranlib(1)과 마찬가지로 아카이브 인덱스 생성, 링크속도 최적화 및 에러 방지 
 
 <br>
 
