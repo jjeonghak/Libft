@@ -6,7 +6,7 @@
 /*   By: jeonghak <rlawjdgks318@naver.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/14 00:17:01 by jeonghak          #+#    #+#             */
-/*   Updated: 2021/11/19 13:13:04 by jeonghak         ###   ########.fr       */
+/*   Updated: 2022/03/06 11:39:54 by jeonghak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,10 @@
 
 # include<stdlib.h>
 # include<unistd.h>
+
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 5000
+# endif
 
 typedef struct s_list
 {
@@ -58,6 +62,7 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 char	*ft_strrchr(const char *s, int c);
 char	*ft_strtrim(char const *s1, char const *set);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
+char	*get_next_line(int fd);
 char	**ft_split(char const *s, char c);
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);

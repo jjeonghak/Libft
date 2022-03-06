@@ -6,7 +6,7 @@
 /*   By: jeonghak <rlawjdgks318@naver.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/19 10:46:02 by jeonghak          #+#    #+#             */
-/*   Updated: 2021/11/19 10:46:05 by jeonghak         ###   ########.fr       */
+/*   Updated: 2022/03/06 12:06:24 by jeonghak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,12 @@
 
 t_list	*ft_lstnew(void *content)
 {
-	  t_list	*node;
+	t_list	*node;
 
-	  node = (t_list *)malloc(sizeof(t_list));
-	  if (node == NULL)
-		  return (NULL);
-	  node->content = content;
-	  node->next = NULL;
-	  return (node);
+	node = (t_list *)malloc(sizeof(t_list));
+	if (node == NULL)
+		return (NULL);
+	node->content = content;
+	node->next = NULL;
+	return (node);
 }

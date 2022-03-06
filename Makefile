@@ -6,7 +6,7 @@
 #    By: jeonghak <rlawjdgks318@naver.com>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/19 13:14:32 by jeonghak          #+#    #+#              #
-#    Updated: 2021/11/25 10:34:59 by jeonghak         ###   ########.fr        #
+#    Updated: 2022/03/06 12:03:21 by jeonghak         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -57,7 +57,8 @@ SRC = ft_atoi.c \
 	ft_strtrim.c \
 	ft_substr.c \
 	ft_tolower.c \
-	ft_toupper.c
+	ft_toupper.c \
+	get_next_line.c
 
 SRCS_B = ${addprefix ${SRC_DIR}, ${SRC_B}}
 SRC_B = ft_lstnew.c \
